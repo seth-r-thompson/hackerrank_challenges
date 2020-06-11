@@ -5,7 +5,7 @@
 * 
 * @param s		A time in "hh:mm:ss:AM" format.
 *
-* Has an average runtime of O(N) where N is the length of the string passed.
+* Has an average runtime of O(1).
 */
 string to_military_time(string s) {
 	string hr = (stoi(s.substr(0,2)) == 12) ? "00" : s.substr(0,2);
